@@ -79,6 +79,8 @@ ApplicationWindow {
                 property int cols: 4
                 property int rows: Math.ceil(buttonsModel.count/cols)
 
+                boundsBehavior: Flickable.StopAtBounds
+
                 anchors.fill: parent
 
                 cellWidth: buttonsGrid.width/buttonsGrid.cols
